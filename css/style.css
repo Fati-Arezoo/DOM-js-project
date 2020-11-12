@@ -19,6 +19,14 @@ body {
   text-align: center;
 }
 
+/**************************************Title**************************************/
+.course-title {
+  margin-top: 1rem;
+}
+.main-title {
+  color: #fff;
+}
+/******************************Loading text and pic********************************/
 .loading,
 .pic-loading {
   text-align: center;
@@ -34,12 +42,7 @@ body {
 .loading-pic {
   height: 100px;
 }
-.course-title {
-  margin-top: 1rem;
-}
-.main-title {
-  color: #fff;
-}
+/**************************************Form box***********************************/
 .box {
   max-width: 32rem;
   padding-top: 1rem;
@@ -81,6 +84,13 @@ body {
   margin-bottom: 0.5rem;
 }
 
+/***********************************Submit button***********************************/
+.submit-btn-div {
+  margin-bottom: 1rem;
+  justify-content: center;
+  display: flex;
+}
+
 #text-submit {
   height: 2.5rem;
   padding: 0 1rem;
@@ -88,12 +98,6 @@ body {
   font-weight: bold;
   outline: none;
   border-radius: 5px;
-}
-
-.submit-btn-div {
-  margin-bottom: 1rem;
-  justify-content: center;
-  display: flex;
 }
 
 .subButton {
@@ -116,6 +120,13 @@ body {
   background-color: #f1ab27;
 }
 
+.subButton:disabled {
+  background-color: #726142;
+  border-color: #f1aa271e;
+  cursor: not-allowed;
+}
+
+/***************************************Cards***************************************/
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -161,18 +172,12 @@ body {
 .text {
   color: #fff;
   text-transform: none;
-  font-weight: 400;
+  font-weight: 500;
   padding-left: 5rem;
 }
 
 .text-one {
-  padding-left: 6.4rem;
-}
-
-.subButton:disabled {
-  background-color: #726142;
-  border-color: #f1aa271e;
-  cursor: not-allowed;
+  padding-left: 6.2rem;
 }
 
 .card-header {
@@ -192,6 +197,7 @@ body {
   cursor: pointer;
 }
 
+/**********************************Media-query*************************************/
 @media only screen and (max-width: 1200px) {
   .cards {
     display: grid;
@@ -200,7 +206,7 @@ body {
     grid-template-rows: auto;
   }
 }
-
+/**************************Media-query for mobile***********************************/
 @media only screen and (max-width: 700px) {
   .cards {
     display: grid;
