@@ -86,7 +86,7 @@ function LoadingClose() {
   loading.style.display = "none";
   loadingTwo.style.display = "none";
 }
-/* ===============================Resetformen===================================== */
+/* ===============================Resetform===================================== */
 function resetForm() {
   studentInput.setAttribute("style", "border:none");
   iconOne.setAttribute("style", "border:2px solid #f1ab27;");
@@ -97,7 +97,7 @@ function resetForm() {
 }
 
 /* ==================Border runt input and icon================================= */
-studentInput.addEventListener("blur", function (evt) {
+studentInput.addEventListener("blur", function (e) {
   if (this.value !== "") {
     setSuccessFor(this);
     iconOne.setAttribute("Style", "border: 2px solid #0cd30cd2;");
@@ -107,7 +107,7 @@ studentInput.addEventListener("blur", function (evt) {
   setErrorFor(this);
 });
 
-courseInput.addEventListener("blur", function (evt) {
+courseInput.addEventListener("blur", function (e) {
   if (this.value !== "") {
     setSuccessFor(this);
     iconTwo.setAttribute("Style", "border: 2px solid #0cd30cd2;");
@@ -117,7 +117,7 @@ courseInput.addEventListener("blur", function (evt) {
   setErrorFor(this);
 });
 
-teacherInput.addEventListener("blur", function (evt) {
+teacherInput.addEventListener("blur", function (e) {
   if (this.value !== "") {
     setSuccessFor(this);
     iconThree.setAttribute("Style", "border: 2px solid #0cd30cd2;");
@@ -154,9 +154,9 @@ function createCard(registerInfo) {
         <div class="card-body">
             <p class="card-body-title">Name: <span class="text text-one">${registerInfo.studentName}</span>
             </p>
-            <p class="card-body-title">course: <span class="text">${registerInfo.coursName}</span>
+            <p class="card-body-title">course: <span class="text text-two">${registerInfo.coursName}</span>
             </p>
-            <p class="card-body-title">Author: <span class="text">${registerInfo.teacherName}</span>
+            <p class="card-body-title">Teacher: <span class="text">${registerInfo.teacherName}</span>
             </p>
         </div>
     </div>  
